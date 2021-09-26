@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+<title>Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.7.js"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
+<script type="text/javascript">
+$(function() {
+    $(".gallery").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="leftcont">
+	<div id="leftimg"><a title="home" href="index.html"><img alt="image description" src="images/zhiyong.jpg" /></a></div>
+	<div id="menu">
+		<ul>
+			<li><a title="link one" href="index.html">Home</a></li>
+			<li><a title="link two" href="publication.html">Publications</a></li>
+			<li><a title="link three" href="project.html">Projects</a></li>
+		</ul>
+	</div>
+  <div id="menu1">
+    <ul>
+		<li><a title="link four" href="LoTNGST.html">IoTNGST</a></li>
+		<li><a title="link five" href="ULMMVPFSS.html">UlTMMVPFSS</a></li>
+		<li><a title="link six" href="MTDPSC.html">MTDPSC</a></li>
+      	<!-- <li><a title="link six" href="GRIP.html">GRIP</a></li> -->
+    </ul>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="Files/zhiyongtang-en.pdf">Biography</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+	<div id="social"> 
+	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="" />  </a>
+	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="" /></a>
+	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="" /></a>
+	</div> 
+	<div class="clr"></div>
+	<h1>Ultra-low Temperature Millimeter Wave Bandpass Frequency Selective Surface</h1>
+    
+    <p>
+		With the development of frequency selective surface(FSS) spatial filters in the fields of security inspection, aerospace and medicine, the requirements for the system's signal-to-noise ratio are extremely high, so the filter is required to filter non-bandpass working bands to the maximum. However, the filter based on the frequency selection surface tends to form the second harmonic band pass of the band pass band, which will reduce the cleanliness of the frequency band in the system.
+		In addition, with the development of frequency selective surface spatial filters in the fields of security inspection, aerospace and medicine, detectors are required to work at ultra-low sub-Kelvin temperatures.
+		Therefore, in view of the above technical problems, it is necessary to provide an ultra-low temperature millimeter wave narrowband bandpass frequency selective surface filter.
+	</p>
+
+    <h2> What is Frequency Selective Surface </h2>
+	<p> 
+		Frequency Selective Surface (FSS) is a kind of spatial filter that interacts with electromagnetic waves and presents obvious band-pass or band-stop filtering characteristics. The frequency selective surface has been fully used in a series of fields such as radome, quasi-light detection system, cosmic ray detection system and medical imaging system. Due to the bandpass filtering characteristics of the frequency selection surface, FSS is widely used in millimeter wave, terahertz, and infrared to visible light bands in terms of frequency selection. In the measurement system, the filter frequency selection surface can be used to filter out interference signals or noise signals outside the main signal frequency band, and selectively pass signals within the signal frequency range.
+		Compared with traditional microwave filters, the frequency response of the THz frequency selection surface FSS is not only determined by the frequency range, but the incident angle of electromagnetic waves is also an important factor affecting the frequency response. The traditional band-pass frequency selection surface FSS is generally composed of a single-layer parallel resonance. This design is simple and easy to analyze, but at the cut-off frequency chopping, it will increase the bandwidth and introduce signals of other frequencies into the system, so this single-layer frequency The selection of the surface may cause the passband signal to be greatly interfered in practical applications.
+	</p>
+	
+	<h2> Frequency Selective Surface Designs (RCC-275 and RCR-275)   </h2>
+	<p>
+		Each unit cell is comprised of five layers (two-metallic and three-dielectric). The metallic layers have identical patterned apertures with centrally aligned features. The three dielectric layers are of equal height, and the metallic layers are also of equal height.
+	</p>
+	<ul>
+		<li>
+			RCC-275 Design Specifications
+		</li>
+	</ul>
+	<center><img src="images/RCC.png" alt="" height="400" align="middle"/></center>
+
+	<ul>
+		<li>
+			RCR-275 Design Specifications
+		</li>
+	</ul>
+	<center>
+		<img src="images/RCR.png" alt="" height="400" align="middle"/>
+	</center>
+
+	<h2> COMSOL Simulation Results </h2>
+	<p>
+		Simulations were completed with COMSOL Multiphysics version 5.5. The assessed frequency range was 100 - 550 GHz at a resolution of 2 GHz. Perfect Electric Conductor (PEC) settings were used for the metallic layers and an extra fine mesh was applied. The dielectric material was Benzocyclobutene (BCB) with defined permittivity of 2.67 and loss tangent of 0.012.
+	</p>
+	<ul>
+		<li>
+			Final 275 GHz filter results
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-final-1.png" alt="" height="100" align="middle"/></center>
+	<br>
+
+	<ul>
+		<li>
+			S-Parameter Plots for 275 GHz FSS Design
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-final-2.png" alt="" height="250" align="middle"/></center>
+	<center><img src="images/comsol-final-3.png" alt="" height="200" align="middle"/></center>
+
+	<ul>
+		<li>
+			RCC-275 Angles of incidence
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-rcc-1.png" alt="" height="100" align="middle"/></center>
+	<br>
+
+	<ul>
+		<li>
+			Angle of Incidence Results for RCC-275
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-rcr-2.png" alt="" height="280" align="middle"/></center>
+
+	<ul>
+		<li>
+			RCR-275 Angles of incidence
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-rcr-1.png" alt="" height="100" align="middle"/></center>
+	<br>
+
+	<ul>
+		<li>
+			Angle of Incidence Results for RCR-275
+		</li>
+	</ul>
+
+	<center><img src="images/comsol-rcr-2.png" alt="" height="280" align="middle"/></center>
+
+
+	<h2>Conclusion</h2>
+	<p>
+		<ul>
+			<li>
+				The filter of this project has the advantages of small insertion loss, small size, small return loss, and small group delay, which meets the needs of millimeter wave security inspection, aerospace and space detection;
+			</li>
+		</ul>
+		<ul>
+			<li>
+				The filter of this project shows very good narrowband selection characteristics and out-of-band suppression characteristics, especially the second harmonic of the passband has good performance in removing clutter;
+			</li>
+		</ul>
+		<ul>
+			<li>
+				The filter structure of this project helps to reduce the size of the unit, thereby reducing the sensitivity to different electromagnetic wave incident angles;
+			</li>
+		</ul>
+		<ul>
+			<li>
+				This project uses the etching pattern on the surface of the metal resonance layer, the dielectric substrate is an ultra-low heat absorption material benzocyclobutene, the processing technology is simple, the support medium cost is low, the volume is small, the ultra-low temperature use characteristics of the filter can be realized, and it can be mass-produced. The assembly between the layers is simple and easy to implement, which prolongs the service life of the frequency selective surface filter.
+			</li>
+		</ul>
+	</p>
+
+	<h2>Publications</h2>
+        <p>...(Writing)</p>
+
+	<h2>Patents</h2>
+	<ol>
+        <li>An ultra-low temperature millimeter wave narrow-band band-pass frequency selective surface.&nbsp;
+            <br>Status: Under Review.<br>
+            Bin Yang, Zhechen, <strong>Zhiyong Tang</strong>, Xinran Wang</li>
+	</ol>
+
+	<h2>Awards</h2>
+	<p>...</p>
+
+</div>
+
+</body>
+</html>
